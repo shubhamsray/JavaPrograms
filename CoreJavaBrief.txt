@@ -1,0 +1,771 @@
+>>>> CORE JAVA <<<<
+
+1. Most popular language created in 1991, publicly released in 1995
+2. Developed by James Gosling at Sun Microsystems
+3. Java was later acquired by Oracle
+4. Simple and easy to use
+5. Write once and run everywhere
+
+Java is used to build:
+- Web App, Mobile App, Desktop App, Game Development, and much more...
+
+Object-oriented language, robust, secure, multi-threading, platform-independent, compile and interpret, and much more...
+
+There are no pointer concepts in Java because of memory leaks.
+
+JDK - JRE - JVM - Class/Library
+
+Installation of JDK:
+- Download JDK from the official website to build Java programs.
+
+Installation of Eclipse:
+- Download Eclipse, set the path, and configure it to run Java programs.
+
+Primitive Data Types in Java:
+- Byte, short, float, double, int, long, char, boolean (8)
+
+Non-primitive Data Types in Java:
+- String, Array
+
+Java Tokens:
+- Keyword, Identifiers, Constant, Special Symbols, Operators
+
+Data Type Conversions/Casting:
+- Implicit and explicit data type conversion
+- Implicit: Low to high
+- Explicit: High to low
+
+Import Java.util.*;
+- For all the in-built packages accessibility.
+
+Packages in Java:
+- Packages minimize the complexity of code.
+
+Package - Public Class - Public - Static - Void - Main - Entry point of the class or program - String arg[]
+
+String[] arg/String arg/s[] = Used for command-line arguments or values stored by default for the whole program.
+
+System - Class, Out - For output stream, Println - Print the string and terminate the line.
+
+Arrays in Java:
+- A container object that holds a fixed number of values of a single type.
+- Length is established when the array is created.
+- Example: int[] arr = new int[n];
+
+Operators in Java:
+- Arithmetic, Assignment, Unary, Conditional, and many more...
+
+Control Flow Statements:
+- If-else, If-elseif-else ladder, Nested if, Ternary ops using, Switch case...
+
+Conditional Statements:
+- For, While, Do-while, Enhanced for loop, Nested for loops...
+
+2D and 3D Arrays in Java...
+
+Collections in Java:
+- Interfaces, Abstract class, Class
+- Linked List, ArrayList, HashMap, HashSet, TreeSet, Map, Stack, Queue, and also there is ITERABLE
+
+ArrayList in Java:
+- A class used to store a list of objects.
+- Syntax: List<Integer> arrayList = new ArrayList<Integer>(5);
+- Methods: arrayList.add(), .remove(), .size(), .get(), and many more...
+
+Linked List in Java:
+- Items are in sequence or order and the first element refers to the second element, and so on.
+- Not synchronized.
+- Syntax: LinkedList<String> list = new LinkedList<String>();
+- Methods: list.add(), .addFirst/Last, .remove(), .removeFirst/Last(), many more...
+
+Set or HashSet in Java:
+- Each element in HashSet is unique, and duplicates are not allowed.
+- Accepts null elements.
+- Syntax: Set<String> hashSet = new HashSet<>();
+- Methods: hashSet.add(), .remove(), many more...
+
+Tree Set in Java:
+- Maintains natural ordering of the elements automatically.
+- Not synchronized, and no duplicate elements are allowed.
+- Syntax: TreeSet<String> treeSet = new TreeSet<>();
+- Methods: treeSet.add(), and many more...
+
+Maps in Java:
+- Key-value arrangement.
+- Keys are unique, and values can be duplicates.
+
+HashMap in Java:
+- Part of the collections framework, found in java.util package.
+- Stores data in a key-value mapping.
+- Syntax: HashMap<String(key), Integer(value)> map = new HashMap<>();
+- Methods: map.put("", ), .size(), .containsKey(), .get(), .keySet(), .entrySet(), many more...
+
+TreeMap in Java:
+- Keys are naturally maintained in order.
+- Syntax: TreeMap<Integer(key), String(value)> map = new TreeMap<>();
+- Methods: map.put( , ""), many more...
+
+Stacks in Java:
+- Represents LIFO (Last In, First Out) stack of objects.
+- Syntax: Stack<String> stack = new Stack<>();
+- Methods: stack.push(), .pop(), .display(), .peek(), and many more...
+
+Queue in Java:
+- A collection for holding elements prior to processing.
+- Follows the FIFO (First In, First Out) arrangement.
+- Syntax: Queue<String> queue = new PriorityQueue<>();
+- Methods: queue.add(), .remove(), .peek(), .poll(), and many more...
+
+Classes and Objects:
+- Class is a blueprint of an object, and an object is an instance of a class.
+- Class has attributes and respective behavior.
+- Members and member functions.
+- Getters and setters methods in Java.
+
+Constructors in Java:
+- Initialize members with respective data types using "this".
+- Default constructor is called if not declared.
+- No return type.
+- Multiple, copy, and other types of constructors.
+
+Stream Map and Filter in Java:
+- Helps to manipulate and iterate collections.
+- Methods: stream().map(), .filter(), .sum()...
+
+ForEach in Java and Stream Reduce Filter in Java.
+
+OOPS Concepts in Java:
+- Polymorphism, Inheritance, Abstraction, Encapsulation.
+- Access Modifiers: Public, Protected, Private, Default - used for class variable and function/method.
+
+Inheritance:
+- The derived class inherits the behavior or methods of the base class.
+- Child class (derived) will inherit all properties of the parent class (base).
+- Known as "is a relationship".
+
+JDK - JAVA DEVELOPMENT KIT - JRE - JAVA RUNTIME ENV - JVM - JAVA VIRTUAL MACHINE
+
+JDK - DEVELOPMENT TOOL where JRE - JAVA CLASS LIBRARY then JVM.
+
+How the above things work accordingly:
+- First.java - javac - first.class - java first (run by JRE).
+
+Using Notepad to run Java program through CMD:
+- Compiling the notepad code: javac MyFirst.java
+- Executing the file: java MyFirst
+
+To know the content code in the notepad file:
+- Type MyFirst.java
+- For having the byte code: type MyFirst.class - language understandable and runnable by machine.
+
+Skeleton of Java program:
+- Name of program: MyFirst.java
+- Import java.lang.* - built-in packages of languages and we are importing it.
+- Class MyFirst - class name should be the same as the file name.
+- Main method - public to access from anywhere and static because it is not creating objects.
+- System.out.println() - System is a class, out is an object, and println is printing the output.
+
+If the class is declared public, it is important to have the class name the same as the file name; otherwise, there will be an error.
+
+String arg[] - Command line argument, compulsory to have in the main method as it is a command-line argument. If not, there will be an error.
+
+How to read data from the keyboard:
+- Scanner, which is used for reading data from the keyboard.
+- Package: import java.util.*
+- Syntax: Scanner s = new Scanner(System.in);
+- Methods: nextInt(), nextFloat(), next(), nextLine(), hasNext(), and many more...
+
+Various Data Types in Java:
+- Primitive data types: int, float, double, char, boolean, byte, short, long.
+
+Byte = size - 1, Range = -128 to 127
+Int = 4, -2147483648 to 2147483647
+Float = 4, +- 1.4E - 45 to +- 3.4E + 38
+Double = 8, +- 439E - 324 to +- 1.7E + 308
+Char = 2, 0 to .65535
+Boolean = ?, true/false
+Short = 2, -32768 to 32767
+Long = 8, ---
+
+Java (not in C/C++) supports various other languages like Japanese, German, Chinese, etc.
+
+Java supports UNICODE. ASCII is a subset of Unicode.
+
+Variables:
+- Name given to data or value, some values are assigned to variables, and it should be a proper data type.
+- Cannot print variables until they haven't been initialized.
+- Case-sensitive, camel case preferred, _ and $ are used, not any others.
+
+Literals:
+- Constant values used in a program.
+- Integer literals: short, int, and byte are there, but for LONG, we have to write like 5L.
+- Double literals: similar to int, the values are by default double literals, but if the user has to declare float literals, then we have "F" like 25.0F.
+
+Why there are four types of int types - byte, short, int, long:
+- Base is int, but it checks compatibility based on CPU bit types 64, 32, 16 respectively.
+
+DECIMAL, HEXADECIMAL, BINARY, OCTAL, 1S COMPLEMENT, 2S COMPLEMENT.
+
+How to store float values:
+- 163.52, we cannot store decimal values, so for that, we have float.
+
+ASCII:
+- For A to Z - 65 to 90
+- For a to z - 97 to 122
+- For 0 to 9 - 48 to 57
+
+UNICODE:
+- ASCII is a subset of Unicode and can have code for various languages like Hindi, Marathi, German, and Spanish.
+- Unicode.org
+
+Different types of IDE:
+- Notepad++, Eclipse, NetBeans, IntelliJ.
+
+Compiler vs. Interpreter:
+- Java uses both as it is platform-independent as WORA (Write Once Run Anywhere).
+- JVM makes the Java program platform-independent through byte code.
+- Main difference between C/C++ and JAVA.
+
+Heap - new object or sum like eg, Stack - variables are created, Code Section - print and main(), How to load code to CPU - Class Loader.
+
+Interpreter/JIT compiler (JUST IN TIME).
+
+Class Loader:
+- 1: Loading, 2: Linking, 3: Initialization.
+- JVM Memory: Method area, Heap area, Stack, PC registers, Native Stack method.
+
+Java Features:
+- Simple, Secure, Portable, Object-Oriented, Robust, Multi-threading, Architecture-Neutral, Interpreted, high Performance, Distributed, Dynamics.
+
+Operators and Expressions:
+- Increment, Decrement, Arithmetic, Bitwise, Relational, Logical.
+- Note: In bitwise op - left shift means double the value given or multiply the value by 2 like for eg:- x=10 then output = 20 - n * 2 the power by k.
+- Here Integer value can only be used.
+- For right shift, here the values are divided by 2 like for eg - x=10 then output = 5.
+- For the NOT op - the eg is like - x = 10 then output will be x = -11 AND if y = 6 then output = -7.
+- Negative value represented as 2's complement in the memory.
+
+Bit Merging and Bit Masking, Swapping, Widening, and Narrowing.
+- For widening and narrowing means type casting the data.
+- For narrowing, we have to downcast and narrow the data type.
+- Byte > Short > Int (< Char only) > Long > Float > Double.
+
+Printing using System.out.println:
+- Eg:- s.o.p("sum"+x+y) where x=10 y=20 then output = sum 1020 where to solve this issue as adding brackets to it("sum"+(x+y)) then output = sum 30.
+
+There are two more printing statements: .printf() and .format().
+
+Arguments Index, Flags, Width, Precision, Conversion.
+
+String objects in Java:
+- Here string is a collection of characters like a sentence and should be enclosed in double quotes.
+- Strings come as character arrays as well as bytes.
+- Here new keyword represents heap memory.
+- String literals also occupy space in the memory as similar to other primitive data types.
+- Here if we are using the same literals, then the same pool reference or memory will be there, but if we use "new" for having the new string object in the heap memory, then it will have a new space, but the literals pool memory reference will be pointing to the same thing.
+- Like for eg:- String str1 = "Java" String str2 = "Java" but String str3 = new String("Java").
+- The above line means not referring to the same object on using new but for literals it will be the same pool.
+
+String Methods:
+- length, toUpperCase, toLowerCase, trim, substring(int begin), substring(int begin, int end), replace, startsWith, endsWith, charAt, indexOf, lastIndex, equals, equalsIgnore, compareTo, valueOf.
+- All the above will give new string thing, it will not modify the same string, and for each new string will be there.
+- We have to take a new variable for that.
+
+Regular Expressions:
+- Used for defining the pattern for strings where it will check that the string is matching the pattern or not.
+- str.matches() returns boolean.
+- Meta expression, qualifiers expression, and ONE MORE IS THERE....
+- It is a very important topic to understand.
+
+Conditional Statements:
+- Relational and logical operators are being used here mostly.
+- If, If-else, Nested if, Else if ladder, Switch case.
+
+Loops in Java:
+- For loop, Do while loop, While loop, For each loop, Nested loop.
+- Loops are used to repeat the set of instruction sets.
+- Sum of given numbers, factorials of given number, display digits, count the digits of a number, finding the number is Armstrong number or not, Reverse a number, check number is palindrome, Display number in words, Fibonacci, Arithmetic progression, and geometric progress series.
+- Patterns using nested loops numbers and stars *.
+
+Arrays in Java:
+- What is an array, how to create and access, For each loop.
+- In array, all elements should be similar with each other.
+- Index starts with 0, its memory created in HEAP, and it will have a factor to have the length of arr.
+- Syntax: % int Arr[](Reference) = new int[n]("object")% and int Arr[] = { 1, 2, ....}.
+- Accessing the elements: S.O.P(Arr[1 or i]) and to ASSIGN - A[1] = 15.
+- For each loops are mainly used for the array thing - for( int i : Arr ){} - mainly used for reading the elements.
+- We can also write: % int[] Arr = new int[5] %.
+- Find the sum of all elements, searching the element, finding the MAX element, find second Largest element: scanning, Traversing, visiting.
+- System.exit(0).
+- Rotating an array, inserting an element in array, deleting an element in array, copy of an array, reverse copying an array, increase Size of an Array.
+- Two-dimensional arrays - syntax - int A[][] = new int[3][3] and there are jagged and ragged types of arrays.
+- Adding two matrices, Multiplying two matrices, Sorting Array of Strings.
+
+Methods in Array:
+- What are Methods, How to Write a Method, Parameter passing, Method Return type, Method Overloading, Var args.
+- At First, there is a Monolithic programming tradition, after that there has a Modular Way of program came, in which different module code is there for a thing which is called the main class.
+- Syntax: returnType methodName(Parameter){} - public static int max(int x, int y){}.
+- DEFINITION, DECLARATION, CALLING.
+- Formal parameters are there in the created method where Actual parameters are those which are there as in the Main Function or method.
+- If you want to avoid the static thing, then create a new object of the class and call it.
+- Parameter Passing - the contents of actual params are copied to formal params.
+- Find a number is prime, Find GCD of 2 numbers, Find Max Element in an Array.
+
+Method Overloading:
+- Writing more than one method with the same name function but different parameters or different data types.
+- Integer values can also be worked for float method in method overloading.
+- Overload method to calculate area, to reverse a int or array, validate name and age.
+
+Variable arguments arrays:
+- Vice versa of method overloading as it can have only one method to perform every task of like method overloading methods.
+- It is vice versa of method overloading as it can have only one method to perform every task of like method overloading methods.
+- Like for eg: void Show( int ... x ){} then called in Main method.
+- Here " ..." means that it gets all the elements combined and makes it as an array.
+- Variable argument should be the last written params in the method.
+- In the main function, there also the Variable argument can be written.
+- Maximum of numbers using varargs, Sum of all the elements using varargs, calculate Discount using Varargs.
+
+COMMAND LINE ARGUMENTS:
+- Shown through terminal or cmd and --- Add numbers using cmd line.
+
+Recursion:
+- A method which calls itself, it is recommended that recursion should not be used because it takes time as well as the memory. Basically used for solving problems.
+
+OOPS - OBJECT ORIENTED PROGRAMMING IN JAVA.
+- Principles of OOPS.
+- Classes vs. Objects.
+- Class and object in Java.
+
+Principles of Object-Oriented Programming:
+- Abstraction, Encapsulation, Inheritance, Polymorphism.
+- Abstraction: Hiding internal details and showing only required features.
+- Encapsulation: Here a word "capsule" is there which means wrapping all the data into a single capsule or unit.
+- Inheritance: We are reusing the code here. It has a thing called Specialization.
+- Polymorphism: Known as the term Generalization. The word itself says that poly means MANY FORMS.
+
+Object:
+- Anything in the world called as object. Basically, it is defined on terms of its Properties and Behavior.
+
+Class:
+- Designing or blueprint of an object is known as class, here in Java properties are the variable which is defined and behavior are the method or function according to properties.
+
+Here object is created in Heap memory, and the method will get method area section of the memory.
+Here for every class, there is a separate class file generated by Java.
+
+DATA HIDING:
+- 1 Why to hide Data, 2 How to hide data, 3 Property Methods.
+- 1 Here user should not be allowed to see the complexity of the program, only the functionality of the program should be there AND for hiding the data we can use the Private access specifiers which will have the access within the class not outside the class through it methods we gonna access that.
+- So to access that private properties we have methods as GETTER AND SETTER.
+- Here SETTER methods will be void every time.
+
+Types of Properties:
+- 1 Read and Write, 2 Read only, 3 Write Only.
+
+CONSTRUCTOR:
+- We want some method which should initialize the properties at the time of creation of the object.
+- It is a method of class which will have the same name as class and it is called automatically when the object is called.
+- There is a default constructor which will be called if we not have it.
+- It will not have any return type. There is also with or without parameters thing is there.
+- We can have as many constructors as we can have like constructor overloading which will be the same as method or function overloading.
+- Write a code for Cylinder with properties radius and height using class and object.
+- * Write a program for Properties and Constructor using product and customer thing with the help of class and object.
+- In constructor "this" keyword plays an important role and also same goes for Array of object.
+
+INHERITANCE:
+- 1 Generalization VS Specialization, 2 Inheritance in Java.
+- Base and Derived, Super and Sub, Parent and Child.
+- Generalization means that it helps to refer a lot of things and make a group of it in a single name.
+- This is achieved using INTERFACES.
+- Specialization means that it will have existing class and will be used further with some more new features.
+- This is achieved using INHERITANCE.
+
+What is Inheritance in Java:
+- It is the process of acquiring the features of the existing class into a new class.
+- EXTENDS is the keyword used in Java for inheritance.
+- Available from super or parent class but it is Accessible or not, these two different things.
+- Constructor in Inheritance.
+- So when we have parent and child constructor, the parent constructor is called first then the child one here we are creating child object still.
+
+Parameterized constructor:
+- Here when both are having params constructor as well as the non-params constructor and then we create a child object then the parent will first and then child both non-params constructor is called but if we are giving values to the object of the child then there will only child params are called not the parent params constructor are called, SO TO CALL parent constructor we firstly we have SUPER() for calling the parents constructor then child constructor as if the child object is there with values.
+- So SUPER() is used for calling parameterized constructor of parents class through child class.
+- THIS AND SUPER.
+
+Method OVERRIDING:
+- 1 What is it, 2 Why it is used, 3 Dynamic method dispatch, 4 Rules, 5 Overloading VS Overriding.
+- Redefining of method of super class in subclass or parent class into child class here when there same method present in the both parent and child then it knows as Method Overriding, so from these if a child object is created then the method which is get called is only from child only not from parent it gets hidden or Shadowed.
+- So here comes the dynamic method dispatch as a Parent class holding the object of Child class then override object or the method of the object will be called not the reference part.
+- So in the Code, we have added @Override Annotation in the child class.
+- Now what is Dynamic Method Dispatch: It is useful for achieving runtime Polymorphism using method Overriding here it calls only those methods which are defined in the parent class.
+- Here methods are called depending on the object not according to the reference.
+- Parents pa = new child() here we cannot do the other way or vice versa.
+- Return type should be the same for both parent and child and the parameter should also be present in both.
+- In Java, polymorphism is achieved through both Method overloading and overriding but overriding can only be there in Inheritance where Overloading can be in the same class.
+- Method Overloading = compile time where as Method Overriding = Runtime.
+
+ABSTRACT CLASS:
+- 1 What is Abstract class, 2 Example of Abstract class, 3 Why Abstract, 4 Keys Points.
+- For abstract class, we write it in front of the parent class using keyword abstract.
+- Two things are there ABSTRACT(Parent/Super) AND CONCRETE(both).
+- We cannot create an object of Abstract class, only its reference is allowed.
+- Abstract class and abstract method.
+- Abstract method means undefined method just ended with "();" there no body to it.
+- Such class are meant for used in Inheritance.
+- Here Method overriding is playing an important role.
+- It is useful for defining standards and imposing standards.
+- Abstract parent class with its abstract methods, the concrete child class must override all the abstract methods in it otherwise it will also be called as abstract class.
+- It should not be final in every way, not the parent class object will be made as well as static is not used.
+
+INTERFACES IN JAVA:
+- 1 What is Interfaces, 2 Multiple Inheritance VS Interfaces, 3 Example of Interface, 4 Do and Don't of Interfaces.
+- Interfaces are completely used for achieving Polymorphism.
+- Instead of abstract class, we can use INTERFACE in some cases.
+- Here interface keyword is used for declaring it instead of class.
+- Classes are extended where as interfaces are implemented.
+- Here also we can use a reference of the parent class with the object of the child class in interface similar to Abstraction.
+- Here classes can be extended only from one class where as Interfaces are implemented one or more times.
+- Here instead of extends we will use implements keyword to inherit from parent interface to child interface.
+- Here we are achieving Runtime Polymorphism.
+- One of the common useage of interfaces in Java is to have callback methods.
+- Cannot be private, here used only uppercase identifiers, interface can extends from another extends.
+
+INNER CLASS IN JAVA:
+- 1 Nested Inner class, 2 Local Inner class, 3 Anonymous Inner Class, 4 Static Inner Class.
+- Define a class inside another class known as inner class.
+- Inner class can access the members of the outer class.
+- Here when we run the code, the class will be generated as outer.class where in which the inner class will be as outer $inner.class, means a separate file will be created.
+- We can define a class inside a method also these is for local inner class.
+- For Anonymous inner class will be created of object by itself at runtime.
+- For static inner class are the static members of outer classes and an object static inner class is created outside of the class.
+- Static keyword is used, they are similar to nested inner class just as there are getting accessed from outside the class.
+
+STATIC AND FINAL IN JAVA:
+- 1 Static Variables, 2 Static methods, 3 Static nested method, 4 Static blocks.
+- Static members belong to the class and are shared by all the objects of a class.
+- Using classname also we can have the access of static member as well as the methods.
+- It is created in the method area memory.
+- Static method can have the access of only static member of a class.
+
+Static Blocks:
+- We can write a statements of block and declared it as Static and it will executed once the class is loaded before the creation of any object of that class like for eg: static {}.
+- The Main methods is executed after all the static class has been executed if the Static class is defined in the Main method then the above line is true.
+
+FINAL IN JAVA:
+- It is just like constant or const concept in C++.
+- There are 1 Final Variables, 2 Final Method, 3 Final Class.
+- Final Variables are constants and the value can not be modified, once the value is assigned.
+- Final variables are returned in CAPITAL LETTERS.
+- Initialization can be done in 3 ways at the start, using static method and using constructor.
+- Final Method - it cannot be overridden.
+- Final Class - cannot be inherited or extended.
+
+Singleton Class:
+- A class which creates a single object, more than one object is not allowed.
+- If make the constructor private then we can not create the object, so to create the object we have static methods and the static Variable should be null at first.
+- Write a program using static for having student account and customer.
+
+WHAT ARE PACKAGES IN JAVA:
+- Packages are a collection of class interfaces and other more packages into it.
+- Packages means folder or files.
+- To use the packages present in it then we have to import it.
+- 3 ways to use it - using a "*", using a class name, or then do not import anything directly refer to a class.
+- Now to how to create a packages - so to create our own package we have a command.
+- "javac -d . MyFirst.java where -d is directory "." is path to folder and it will create a package of its own and also we can include one or more classes into single packages.
+- For deleting the class file cmd is - del *.class.
+- Here can also create inner package into outer package as well.
+- Package or subPackages.
+- Here we can use our own create package as import mypack1.MyFirst; in the main method.
+
+ACCESS MODIFIERS:
+- Default, Public, Private, Protected.
+- Here the outer main class will be only default or public not private or protected.
+- We can either create its object or extend another class.
+- Sub class in the same package or sub class in another package.
+- Naming convention of packages - eg:- com.citibank.Account/loans/saving/current and within the packages there will classes or subpackages like in loans there will due amount and paid amount of particular customer is to be there.
+
+EXCEPTION HANDLING:
+- Exception are runtime errors.
+- 1 Syntax error, 2 Logical Error, 3 Runtime Errors.
+- Syntax and logical error are to faced by programmer who has written the code.
+- Where as Runtime errors are faced by users so for that it is called Exceptions.
+- Syntax and logical errors are compile time errors and for logical we are tracing or debugging it.
+- Types of error in runtime faced or done by users end as eg:- invalid input and unavailability of the resources.
+- So for users understanding purpose we are having exception which done by programmer in the program to guide the user that what user has done wrong.
+- One of the use of Exception is also to find the error and still there is error it should no stop the program and run the further code except the error part.
+- So the solve the above issues and thing we have TRY AND CATCH - in which, TRY block there will be thing that the exception would happen in these condition and in CATCH it will catch the type of exception and execute the program.
+- We have here - One try block and multiple catch blocks.
+- Nested Try and catch blocks.
+- Finally Blocks is also there.
+- So if there is an exception in try block then only the catch block is executed where FINALLY block is compulsorily getting executed whether there is exception or not most it used for clean up process.
+- Build in Exception class in java: object--throwable--exception and error.
+- Exception - classnotfoundException, IOException, interruptedException, RuntimeException and many more.
+- All the exception class are classified into parts - checked and unchecked.
+- So we have build in class of exception - class exception - string getMessage(), string toString(), void printStackTrac().
+- What is Throw and Throws: so here throws will be used for expressing the Method AND throw will actually throw the exception according to the condition.
+- In simple words throw is used for throwing where throws is used for defining.
+- So according this throw and throws the try and catch will be lookout.
+- Without try and catch if we use throw and throws then the program will not be compiled.
+- We can also define our own class of Exception.
+
+TRY WITH RESOURCES:
+- 1 What are resources, 2 Why finally, 3 Try with resources.
+- So here the program or the code is in the STACK part of a memory where as the object as its reference is in the HEAP memory which also know as RESOURCES PART.
+- So all the things outside the program are resource for a program.
+- When ever we need a resource then acquire them, if not then close/return them same as go for HEAP.
+- Eg: file handling, so if the resources are not closed or returned then here comes the role FINALLY from which it will compulsorily close it.
+- We can create a resource with in the TRY only - AUTOCLOSABLE.
+- STACK - stackoverflow stackunderflow are also exception.
+
+MULTITHREADING IN JAVA:
+- 1 Multiprogramming, 2 Why multithreading, 3 Control flow of program, 4 Thread in JAVA.
+- So running more than one programs on a single computer is multiprogramming.
+- It has two parts Multi-user and Multi-tasking and in Multi-tasking there is MULTITHREADING.
+- Running more than one task for a single user than it called Multi-tasking and there more than one application running simultaneously.
+- Inside single application more than one part is running than it is called threads.
+
+Control Flow of a Program:
+- Single control flow.
+- So to run two code/part of single program simultaneously we will use thread.
+- Java provide 2 methods to perform thread - 1 THREAD CLASS, 2 RUNNABLE INTERFACE.
+- Classes should have THREAD in extended way then only it will able to use feature of thread class.
+- Here whenever we are having thread class, it should have the method in it RUN method only.
+- Here everything will come under RUN method.
+- So for running the thread will not call RUN method for that we will have START() call.
+- Okay there is second method which is that we can make the MAIN CLASS extend to THREAD.
+- Now for Runnable the same things is there just here we will have IMPLEMENTS RUNNABLE KEYWORD INSTEAD of extended thread.
+- Other than run and start and the MAIN CLASS thing are same in the RUNNABLE interfaces.
+- AND the most important thing in RUNNABLE INTERFACES there will always be thread thing.
+- Stated Of THREAD: new --(Start)-- ready --(run)-- running -- (End)-- terminated.
+- In RUNNING STATE - Wait(wait and notify) Timed Wait(sleep/wait) blocked(request I/O).
+- If the thread is terminated once then we have to have new thread then.
+- THREAD PRIORITIES - here SCHEDULER plays an important role for time purpose for thread execution.
+- Thread.MIN_PRIORITY, NORM_PRIORITY, MAX_PRIORITY.
+
+What is Synchronization:
+- It is the coordination or understanding between two entities.
+- So here in multithreading we have the synchronization using threads.
+- The type of synchronization between threads is - Resource sharing, critical section, Mutual Exclusion, Locking/Mutex, Semaphore, Monitor, Race Condition, Inter-Thread communication.
+- To use synchronization we have to use key word Synchronized(this){};.
+- So here I have made the block synchronized but we can also add Synchronized the method also.
+
+Inter-Thread Communication:
+- Here the most important thing is to use FLAG of boolean datatype in the Main class, so basically the flag help to check and wait for the respective turns of the thread which will be executed.
+- Here we have method which will be to know when to wait and when to proceed that is WAIT() and NOTIFY().
+
+JAVA.LANG PACKAGES:
+- This will get by default imported in java programs.
+- Object class - parent class of all the classes in java.
+- Clone(), hashcode(), notify, notifyall, toString, and many more are there...
+- WRAPPER CLASS - we can make objects of these wrapper class on primitive data types.
+
+String:
+- Collection of characters which is immutable, cannot be modified.
+
+STRING BUFFER:
+- This is another class of string which is mutable and we can append the string here and also string can be inserted at any index and also it is thread safe because of thread safe it is little bit slower to overcome these we have STRING BUILDER.
+
+STRING BUILDER:
+- Same as STRING BUFFER but not thread safe.
+
+MATH CLASS:
+- Abs, cbrt, decrementExact, getExponent, log10, max, tan, toDegree and many more...
+
+WHAT IS ENUM:
+- It is declared just like class using the keyword ENUM, basically it is automatically inheriting from class ENUM and in enum all the variables should be in capital only.
+- In these ENUM there we can also define constructor which will only be private and default.
+- All values are printed when constructor is called in enum.
+- We can also define public method except constructor.
+
+REFLECTION PACKAGE IN JAVA.
+
+ANNOTATIONS AND JAVADOC IN JAVA:
+- Javadoc - javadocumentation tool - it is documentation of JAVA about everything.
+- We must refer to it as a developer.
+- Javadoc tags - class, method, other - @author, @param, @link and many more...
+- We have used double star like for example - /** ... **/ for having a java doc like structure.
+- Java doc is tool on using of which it converts the interface or look into orignal java alike.
+
+ANNOTATION:
+- 1 Applied to code, 2 Applied to other Annotation.
+- It is used for defining the attributes of a class.
+- In-built annotation java - @override, @deprecated, @FunctinalInterface, @SuppressWarnings...
+- User-defined annotation - method of creating our own ANNOTATION is similar to INTERFACE.
+- We write for class, method, arguments, local variable.
+- There also METADATA things in Annotation which we can provide methods of our own in the Annotation interface which will be passed as parameters.
+- We can also provide default value to the metadata using default keyword.
+- Use of user-defined annotation means that some metadata is to get hold there for the usage.
+- Other Built-in Annotation - Retention, Documented, Target, Inherited, Repeatable.
+
+LAMDA EXPRESSION IN JAVA:
+- It is used for defining anonymous methods or nameless methods or functions.
+- It is performed using interfaces and if it is having just a single abstract method then it is called annotations as Functional Interface.
+- So instead of implementing the class we can directly call the implemented class method into MAIN method which called as ANOYMOUS CLASS.
+- Syntax: MyLamda m = ()->{};
+- It makes program easier way to code using lambda expression.
+- 1 Using class and interface and 2 Using anonymous class expression.
+- Parameters in Lamda expression.
+- We can using lambda expression as function and method also as it can have its own variables inside the lambda expression and it can access the variable of the method in which these expression is defined but those variable must be final and also it can capture instance variables they may or may not be final and it can be modified.
+- It can also used for defining the a method.
+
+Method Reference:
+- We can directly use the reference on use of scope resolution method for printing and all.
+- We also define constructor, static and non-static, parameter - nonparameter.
+
+JAVA IO STREAMS (FILE HANDLING):
+- JAVA INPUT AND OUTPUT.
+- Stream is a flow of data.
+- Buffer - speed for taking the input and getting the output.
+- Buffer is a memory object which is used for holding the data for sometime to bring the compatibility between the devices eg:- video playing online.
+- Buffer is the very important thing for transferring the data between the devices.
+- Now the here how the data flows IN AND OUT: so here the comes part of BYTE STREAM and CHARACTER STREAM, byte = 1byte and char = 2byte.
+- INPUTSTREAM AND OUTPUTSTREAM:
+- Inputstream - int read(), read(byte[] b), read(byte[] b, int off, int len), available, Long skip(..), close().
+- Outputstream - void write(), write(byte[] b), write(byte[] b, int off, int len), void flush(), void close().
+- Java.io class: various types of class are there in BYTE stream and CHAR stream.
+- In charstream there is READER AND WRITTER instead of output stream and input stream.
+- Fileoutputstream used create and write in the txt file where as fileinputstream is used read it by creating its object.
+- Similar goes for fileReader and fileWritter also.
+- It should be written using TRY AND CATCH BLOCK.
+- So now here comes the COPYING OF ONE PART TO ANOTHER using and also how to copy 2 files one by one in a third file.
+- Here we will be using a class sequneceinputstream.
+- ByteArrayInputStream AND ByteArrayOutputStream.
+- BUFFERED STREAMS AND BUFFERED READER.
+- Piped input stream and piped output stream.
+- RANDOM ACCESS FILE: SEEK() to find readint writeint.
+- Handling the file: File attributes setread setwrite setlastmodified length isfile/directory.
+
+SERIALIZATION:
+- Storing data object into the file - PRINTSTREAM which will be for only create and write and where as for reading it we need buffer stream for creation of new object of file input stream Reader we have to do parseint and use readline.
+
+DATAINPUT AND DATAOUTPUT STREAMS:
+- Storing data object into the file second method.
+- Dataoutput stream for creating and writing it as writeint writeutf similar the opposite goes for datainputstream.
+- Here if we change the order of accessing the object instance then it will give an error.
+
+SERIALIZATION FINAL:
+- Here it will take the whole object not the internal things and store it as in the file respectively using OBJECTOUTPUTSTREAM AND OBJECTINPUTSTREAM for this we must have IMPLEMENTS SERIALIZABLE KEYWORD INFRONT OF CLASS and also default constructor should be there.
+
+>>>>>> DATE AND TIME API <<<<<
+
+1. Date Representation.
+2. Date class.
+3. Calendar class.
+4. Time zone.
+
+Package - java.time - now a days, before the package was - java.util.
+Date represented as LONG datatype which contains milliseconds from 1 jan 1970.
+Starting calendar of java is from - 1900.
+Deprecated class - it is the old class which we are accessing from util package for new we have time package.
+Week start from Sunday with index 0 as well as the Month and for year we have to add 1900 to get the current year.
+Gregorian calendar and time zones.
+
+Why new date api - it solves the issue of previous date class as - milliseconds class and time set the date from new date api we get - local date and time separate and both for the time from new date api we get - local date and time separate and both for the time.
+Date new api provides many types of classes like - zoneddatetime, offsetDatetime, offsettime and many more...
+Date formatter dd/MM/yyyy or mm or z or Z and many more...
+
+>>>>>> NETWORK PROGRAMMING <<<<<<
+
+OSI model - here we are going to understand communication between hardware and software through network.
+OSI model is there but now a days TCP/IP are to be followed more oftenly.
+Application - presentation - session - transport - network - datalink - physical.
+TCP/IP: network access layer - network layer - transport layer - application layer.
+Ethernet - IPv4 IPv6 - TCP/UDP - HTTP FTP SMTP POP.
+
+Reverse ECHO server using SOCKET - if a client is sending a message to the server, it will reply back the same message.
+Here we are doing ECHO server which is called as SOCKET PROGRAMMING in JAVA.
+If more than servers are running in single system, then recognize them from there port numbers - range - 0 - 65535.
+For client - class - SOCKET and for server - class - SERVER SOCKET.
+Import java.net.* and java.io.*.
+Bufferreader inputstreamreader getinputstream printoutputstream accept() stringbuilder do while readline tostring msg not equals end in reverse.
+There one public class in the file - for ip address - ipconfig command.
+
+MULTI - USER Reverse ECHO server using SOCKET - for every client here we will have thread and now it will play the role as SERVER THREAD for multiple clients.
+Extend thread class using try catch block.
+
+DATAGRAM Reverse ECHO server using SOCKET - used for UDP - classes are - datagram socket - datagram packet.
+Methods - send and receive.
+
+>>>>>> JDBC USING SQLITE <<<<<
+
+1. Files vs Databases.
+2. What is database.
+3. Famous database.
+
+How to data stored in a file - java.io or file handling.
+
+But here to store or organize large amount of data is difficult so because of that we have DATABASE.
+So here database which is collection of data organized in tabular form and to retrieve the data.
+So for this we have databases in java with SQL queries to perform command for various things.
+And for above things we have here JAVA DATABASE CONNECTIVITY AS JDBC.
+Famous db - oracle, mysql, and SQLITE which we are going to use here.
+Database Terminology - Relation Record Field Primary and Foreign key Relationship Constraints.
+Using SQLITE we have - DML DDL DQL/DRL commands to perform various methods on the database.
+Aggregation function Joins all the thing of databases.
+
+JDBC DRIVERS:
+- For communicating between java program and database we have - STATEMENTS CONNECTIONS DRIVERS - Database.
+- There are four types of DRIVERS - ODBC - open database connectivity.
+- 1 JDBC - ODBC bridge (partial) 2 Native - API (partial) 3 Java-Net protocol drive (pure) 4 Thin Drive(pure).
+
+Steps to program:
+- 1 Use Driver.
+- 2 Establish Connection.
+- 3 Create Statement.
+- 4 Execute Query.
+- 5 Get ResultSet.
+- And HERE THE MOST IMPORTANT THING WE HAVE TO DOWNLOAD THE DRIVER FOR JDBC.
+- SET CLASSPATH.
+- JAVA.SQL.PACKAGE.
+- TYPES OF STATEMENTS: 1 STATEMENT 2 PREPARED 3 CALLABLE.
+
+PREPARED STATEMENT:
+- For taking the inputs and setting the parameters we are having prepared statement.
+- Here we have to see how we have performed PREPARED statement, DML, DDL and other things in the communication between java program and Database.
+- These all about JDBC.
+
+>>>>> AWT ABSTRACT WINDOW TOOLKIT <<<<<
+
+GUI AND CUI - GRAPHICAL USER INTERFACE AND CHARACTER USER INTERFACE.
+GUI - it is a interface same as this pc and its file content where all the content or file we are seeing it graphically as it will have look and feel as per the OS.
+CUI - it is a interface which works on commands same command prompts or git thing where we have to give the cmd and have the desire thing like for eg - dir cd chmod and many more.
+JAVA provides various frameworks to have GUI interface like - AWT Tool kit, java SWING, java FX.
+AWT - COMPONENTS - frame, canvas, textarea, label, button, choice, textfield, listitem, checkbox - PACKAGE - java.awt.
+
+Till now we have seen only the CUI thing in JAVA, NOW how to get the GUI using JAVA is here using AWT.
+Here we will se how to build a frame of size then how to add button, textarea, textfield, layout and much more to have a GUI.
+After that we will have to have the function through EVENT HANDLING to have the functionality of the like button and all.
+EVENT DELEGATION MODEL - action event/listener mouse event/listernier keyevent/listerner item event/listener and many more.....
+
+Button, checkbox, radio buttons, Textarea, Listbox, choices, Textfield, scrollbar, EVENT HANDLER, EXTENDS inheritance, IMPLEMENT interface.
+Layout Manager - card, border, grid, gridbag ..... Key event typed pressed released ..... Mouse event entered exit clicked .....
+WINDOW EVENT ADPATER CLASS.
+Different ways of handling the EVENTS: frame class as listener, inner class, anonymous class, lamda expression.
+Painting and many thing to have in it.
+Animations - multi threading.
+
+>>>>>>> SWING IN JAVA (ADVANCED THEN AWT) <<<<<<<<
+
+Awt - platform dependent, heavy weight, few components, host look and feel, no mvc.
+SWING - independent, light weight, Many components, pluggable look and feel, support mvc.
+Here all the classes are same as the AWT just there will be a word is add in front of all the things or each and every part which is "J" as JFC JAVA FOUNDATION CLASS as for eg: for AWT we have FRAME where we have JFRAME for SWING - package is - javax.swing.*.
+
+We can set image also here and the imp thing is here AWT items and its listener is going to be get used as SWING is not having that part.
+Jnumber formatter, Jtextfield, JTextarea, set the max value, restrict the field for certain values.
+Jcheckbox, Jradiobutton, Border in Swing, Jtree components, Jscrollpane/bars, Layered Pane(one above another), Internal frames, Split Pane, Tabbed pane, Jslider, Jprogressbar, Jspinner, Jlist, Jcombobox, Jmenubar and Jtoolbar.
+Jfilechooser, Jseparator, Jcolorchooser.
+
+>>>>>>> JAVAFX IN JAVA (ADVANCED THEN AWT AND SWING) <<<<<<<<
+
+Key Features - java api, FXML Scene builder, Webview, Swing Interoperability, Built-in ui controls and css, canvas api, Multitouch Support, Hardware-accelerated graphics pipeline, high performance media engine, Self-contained application, deployment model.
+
+JavaFX is native GUI for java which is a replacement of SWING and javaFX is discontinued from oracle, it there till JAVA version 8 or jdk8.
+Install and download JAVAFX from browser - download openjfx.com - here version should be available.
+For using the downloaded JFX zar file add the file as global setting to use it and every time when we create a javaFX program we have to add that.
+And there after create a project we have to add properties for COMPILE AND RUN in the LIBRARY - ( --add-modules javafx.controls,javafx.fxml ).
+Every JavaFx class Extend From Class APPLICATION.
+Stage.show, lauch, settitle, Scene, parent, child and many more...
+Event Handling - EventHandler<>(){} - interface, anonymous, lamda.
+Here we can have the data in the text file and also we can retrieve the data and save the data and search the data using JAVAFX methods and components.
+Layouts - flowpane, Tilepane, Borderpane, Hbox, vbox, Gridpane, Scrollpane, Splitpane, Tabpane, Titledpane, Accordion.
+
+THE END ---- CORE JAVA COURSE IS COMPLETED ---- DONE
